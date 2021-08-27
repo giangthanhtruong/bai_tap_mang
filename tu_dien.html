@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <input type="text" id="nhapvao">
+        <button type="button" name="timkiem" onclick="dich()">Dịch</button>
+    <script>
+        let arr1 = ["hello","speak","good moning","sleep"];
+        let arr2 = ["Xin chào","nói","chào buổi sáng","ngủ"];
+        function dich() {
+            let value = document.getElementById("nhapvao").value;
+            let check = true;
+            for (let i = 0; i < arr1.length; i++ ) {
+                if (arr1[i] === value) {
+                    document.write(arr2[i])
+                    check = false;
+                }
+            }
+            if (check === true) {
+                document.write("Không tìm thấy")
+            }
+        }
+
+    </script>
+</body>
+</html>
