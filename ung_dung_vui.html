@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1><strong>Type anthing slowly</strong></h1>
+  <textarea id="a" rows="5" cols="40" onkeydown="nhapvao()"></textarea>
+        <script>
+             let arr = "Tôi là một đứa ngốc!"
+             let stt = arr.split('')
+
+             let str=''
+             let i=0
+             function nhapvao() {
+               if (i===arr.length) {
+                   i=0
+                   str=''
+               }
+               str=str+stt[i]
+                 console.log(str)
+                 document.getElementById('a').value = str;
+                 i++
+             }
+        </script>
+</body>
+</html>
