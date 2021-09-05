@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = 0;
+    let arr = Array();
+    let j = false;
+    for (let i = 0; i < 10; i++) {
+        arr[x] = prompt('nhập');
+        x++;
+    }
+    let v = prompt('nhap V')
+    for (let i = 0; i < 10; i++) {
+        if (v === arr[i]) {
+            j = true;
+        }
+    }
+    if (j) {
+        document.write("V is in the array")
+    } else {
+        document.write("V is not in the array")
+    }
+
+</script>
+</body>
+</html>
